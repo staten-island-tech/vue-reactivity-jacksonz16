@@ -58,11 +58,11 @@
   width: 300px;
   height: 300px;
 }
-    
-  .merch-img:hover {
+  
+ .merch-img:hover {
     transform: scale(1.25);
   }
-
+  
   .merch-price {
     margin-top: 2.5%;
     color: red;

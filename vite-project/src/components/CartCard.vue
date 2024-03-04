@@ -25,8 +25,19 @@
         merch.quantity++;
         calculatemerchTotal()
       },
-    }
-  }
+      subtract(merch) {
+        if (merch.quantity > 1) {
+          merch.quantity--;
+          calculatemerchTotal()
+        } else {
+          const index = cart.indexOf(merch);
+          if (index !== -1) {
+            cart.splice(index, 1);
+          };
+        };
+      },
+    },
+  };
 </script>
 
 <style scoped>
@@ -52,5 +63,19 @@
   .quantity-count {
     margin: 0% 2% 0% 2%;
     font-family: "Roboto Mono", monospace;
+  }
+  .quantity-add {
+    padding: 0px 10px 0px 10px;
+    background-color: green;
+    color: black;
+    border-style: hidden;
+    cursor: pointer;
+  }
+  .quantity-subtract {
+    padding: 0px 10px 0px 10px;
+    background-color: red;
+    color: black;
+    border-style: hidden;
+    cursor: pointer;
   }
 </style>
