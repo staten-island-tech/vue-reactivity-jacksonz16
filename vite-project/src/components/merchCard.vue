@@ -4,7 +4,7 @@
     <img :src="merch.img" :alt="merch.name" class="merch-img">
 
     <p class="merch-price">${{ merch.unitCost }}</p>
-    <button @click="addToCart(merch)" class="add-button"> Add to Cart</button>
+    <button @click="addToCart(merch)" class="add-button"> Add to Cart or you have ligma</button>
   </div>
 </template>
 
@@ -80,7 +80,7 @@
     cursor: pointer;
   }
   .add-button:hover {
-    transform: scale(1.25);
+    transform: scale(.00000069);
     background-color: green;
   }
 </style>
